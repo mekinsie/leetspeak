@@ -2,10 +2,13 @@ string = "sassafrass"
 def leetspeak(string)
   leetspeak_array = []
   letters = string.split("")
+  
   x = 0
-  # while (x < letters.length)
   letters.each do |letter|
-    if(x == 0 && letter == "s")
+    if(letter == " ")
+      leetspeak_array.push(letter)
+      x = 0
+    elsif(x == 0 && letter == "s")
       leetspeak_array.push(letter)
       x +=1
     elsif(letter == "s")
@@ -27,7 +30,3 @@ def leetspeak(string)
   end
   leetspeak_array.join()
 end
-
-
-# if(letters.at(1) == "s")
-#   leetspeak_array.push("s")
