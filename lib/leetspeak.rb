@@ -7,8 +7,10 @@ def leetspeak(string)
       leetspeak_array.push('3')
     elsif(letter == "o")
       leetspeak_array.push('0')
+    elsif(letter == "I")
+      leetspeak_array.push('1')
     else
-      leetspeak_array.push(letter)  
+      leetspeak_array.push(letter)
     end
   end
   leetspeak_array.join()
