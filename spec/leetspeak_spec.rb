@@ -9,5 +9,9 @@ describe('#leetspeak') do
   it('replaces every "e" in a string with a "3"') do
     expect(leetspeak("weeping")).to(eq("w33ping"))
   end
+
+  it('replaces every "o" in a string with a "0"') do
+    expect(leetspeak("pooping")).to(eq("p00ping"))
+  end
 end
 
