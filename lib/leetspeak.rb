@@ -9,6 +9,8 @@ def leetspeak(string)
       leetspeak_array.push('0')
     elsif(letter == "I")
       leetspeak_array.push('1')
+    elsif(letter == "s")
+      leetspeak_array.push('z')
     else
       leetspeak_array.push(letter)
     end
